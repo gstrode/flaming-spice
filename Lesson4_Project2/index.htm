@@ -105,7 +105,6 @@
                     wageRate = parseFloat(rate.value);
                     hoursWorked = parseFloat(hours.value);
                     console.log('here');
-                    alert('look');
                     
                     //Calculate Gross Pay
                     grossPay = hoursWorked * wageRate;
@@ -125,9 +124,10 @@
                     
                     //Display Employee Information
                     document.getElementById("firstlast").innerHTML = "Employee Name: " + empName.toUpperCase();      
-                    document.getElementById("hoursWorked").innerHTML = "Hours Worked: " + hours.value;                    e;
-                    //document.getElementById("hourlyWage").innerHTML = "Hourly Wage Rate: " + rate.value;
-                    alert('here again');
+                    document.getElementById("hoursWorked").innerHTML = "Hours Worked: " + hours.value;  
+                    console.log('line 129');
+                    document.getElementById("hourlyWage").innerHTML = "Hourly Wage Rate: " + rate.value;
+                    
 
                     //Display Payroll Calculation Results
                     document.getElementById("grosspay").innerHTML = "Gross Pay:" + grossPay.toFixed(2);      
@@ -135,7 +135,7 @@
                     document.getElementById("statewith").innerHTML = "State Income Tax: " + stateTaxWith.toFixed(2);
                     document.getElementById("totalded").innerHTML = "Total Deductions: " + totDeductions.toFixed(2);
                     document.getElementById("netpay").innerHTML = "Net Pay: " + netPay.toFixed(2);  
-                    alert('all done');
+                    console.log('all done');
                     
                 }//end of myFunction          
           
